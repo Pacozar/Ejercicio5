@@ -19,7 +19,7 @@ def circulo():
         try:
             radio = int(input('Radio del Circulo: \n'))
             break
-        except:
+        except:4
             print('Escribe una longitud valida')
 
     areac = math.pi * (radio ** 2)

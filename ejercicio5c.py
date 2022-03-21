@@ -6,10 +6,16 @@ def bisiesto():
         except:
             print('Escribe un año valido')
 
-    if numero % 4 == 0:
-        print(numero, 'es un año bisiesto')
-    elif numero % 4 != 0:
+    if numero % 4 != 0:
         print(numero, 'no es un año bisiesto')
+    elif numero % 100 == 0 and numero % 400 == 0:
+        print(numero, 'es un año bisiesto')
+    elif numero % 100 == 0 and numero % 400 != 0:
+        print(numero, 'no es un año bisiesto')
+    elif numero % 4 == 0:
+        print(numero, 'es un año bisiesto')
 
     bisiesto()
+
 bisiesto()
+
